@@ -10,3 +10,10 @@ word_list = [
     'Libelle', 'Biene', 'Wespe', 'Ameise', 'Grille', 'Heuschrecke', 'Käfer', 'Marienkäfer', 'Schnecke', 'Regenwurm',
     'Spinne', 'Skorpion', 'Eidechse', 'Gecko', 'Chamäleon', 'Schlange', 'Kobra', 'Python', 'Anakonda', 'Warane'
 ]
+
+words = ['Hello', 'World', 'Python', 'is', 'great']
+sentence = ' '.join(words)
+print(sentence)
+
+sentence_v2 = ' and '.join(word_list)
+print(sentence_v2)
