@@ -13,6 +13,12 @@ class flow_writing:
             if char in ".!?":
                 time.sleep(0.5) 
 
+# transform word 
+    # e.g.: word 
+    # WORD 
+    # W O R D 
+    # _ _ _ _ 
+
 def game():
     # introduction 
     introduction_text = '''
@@ -20,6 +26,8 @@ Welcome to Hangman ...
 You think you can guess my word? ...
 I don't think so ...
 But we will see ... 
+Small hint ... 
+It's all about animal names ... 
 '''
 # illustration
     # red underline 
@@ -30,8 +38,17 @@ But we will see ...
     searched_word = random.choice(word_list)
     print(searched_word)
 
+    # lifes 
+    lifes = 10 
+
+    correct_word_guess = False 
+
     # while loop
+    while lifes < 10 and correct_word_guess == False: 
         # amount of char is shown to the user
+        print(f'Amount of lifes: {lifes}')
+    
+
         # user guesses 
 
     # result
