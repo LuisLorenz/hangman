@@ -16,7 +16,10 @@ guess_upper = guess.upper()
 print(guess_upper)
 # R
 
+user_guesses = []
+
 if guess_upper in char_list: 
     print('Your guess was correct')
+    user_guesses = guess 
 else:
     print('Your guess was wrong.')

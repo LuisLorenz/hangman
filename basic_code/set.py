@@ -14,3 +14,5 @@ word_list = sorted(word_set) # creating a list and sort it in the some step
 print(word_list)
 word_set = set(word_list)
 print(word_list)
+# ['A', 'C', 'E', 'G', 'H', 'L', 'N', 'S']
+# ['A', 'C', 'E', 'G', 'H', 'L', 'N', 'S']
