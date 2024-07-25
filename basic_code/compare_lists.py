@@ -16,4 +16,8 @@ if word1_set == word2_set:
 else: 
     print('False') 
 
+# for sets there are not order
+# as a result it is not a criteria 
+# same elements of sets -> identicial sets!
+
 print(word1_set)

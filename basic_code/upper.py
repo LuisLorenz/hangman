@@ -1,3 +1,4 @@
+import random
 # creating a list of char of a word
 
 word = 'Regenbogen'
@@ -23,3 +24,8 @@ if guess_upper in char_list:
     user_guesses = guess 
 else:
     print('Your guess was wrong.')
+
+
+list2 = ['Haus', 'Seeschlange']
+word2 = random.choice(list2)
+print(word2)
