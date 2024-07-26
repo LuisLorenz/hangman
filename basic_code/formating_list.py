@@ -10,5 +10,6 @@ correct_char_guess = []
     # else '_' 
 
 word_list = ' '.join(['_' for char in word])
+    
 
 print(word_list)

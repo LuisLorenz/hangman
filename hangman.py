@@ -72,7 +72,7 @@ It's all about animal names ...
 
     while "_" in display and lifes > 0:
         show_display()
-        guess = input("Raten Sie einen Buchstaben: ").upper()
+        guess = input("What character do you guess?: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if not guess_letter(guess):
                 print(f"The character '{guess}' is not part of the searched word.")

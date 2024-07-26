@@ -26,6 +26,4 @@ else:
     print('Your guess was wrong.')
 
 
-list2 = ['Haus', 'Seeschlange']
-word2 = random.choice(list2)
-print(word2)
+
