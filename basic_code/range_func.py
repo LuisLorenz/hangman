@@ -1,6 +1,6 @@
 word = 'Seeschlange'
 
-print(word[0])
+print(word[0]) # so each char is already assigned to one index in the first place!
 for i in range(len(word)):
     # print(i)
     print(word[i]) # each char gets index (assignation)

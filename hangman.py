@@ -29,7 +29,7 @@ But we will see ...
 One small hint ... 
 It's all about animal names ... 
 \n'''
-    flow_introduction_text = flow_writing(introduction_text)
+    # flow_introduction_text = flow_writing(introduction_text)
 
 # illustration
     # red underline 
@@ -46,8 +46,8 @@ It's all about animal names ...
     # display word 
     display = len(searched_word) * ['_']
 
-    guessed_char = []
-    guessed_char.sort()
+    unsorted_guessed_char = []
+    sorted_guessed_char = sorted(unsorted_guessed_char)
 
     def show_display(): 
         print(' '.join(display))
@@ -75,14 +75,14 @@ It's all about animal names ...
 
         show_display()
         print(f'Amount of lives: {lifes}')
-        print(f'Guessed letters: {guessed_char}')
+        print(f'Guessed letters: {sorted_guessed_char}')
         guess = input("What character do you guess?: ").upper()
         if len(guess) == 1 and guess.isalpha():
-            if guess in guessed_char: 
+            if guess in sorted_guessed_char: 
                 print('You already guessed that letter. Please try again!')
             
             else: 
-                guessed_char.append(guess)
+                sorted_guessed_char.append(guess)
 
             if not guess_letter(guess): # if False 
                 print(f"The character '{guess}' is not part of the searched word.")
