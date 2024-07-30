@@ -29,12 +29,7 @@ But we will see ...
 One small hint ... 
 It's all about animal names ... 
 \n'''
-    # flow_introduction_text = flow_writing(introduction_text)
-
-# illustration
-    # red underline 
-    # big font 
-    # flow_introduction_text = flow_writing(introduction_text)
+    flow_introduction_text = flow_writing(introduction_text)
 
     # computer chooses random word from word_list 
     searched_word = random.choice(word_list).upper()
@@ -62,17 +57,6 @@ It's all about animal names ...
 
     while "_" in display and lifes > 0:
 
-        # check if the char was already being guessed 
-            # list 
-            # if guess in list 
-                # try again
-            # else:
-                # add guess to list 
-            # needs to be in the alphabet 
-            # should be sorted -> list 
-
-            # print list
-
         show_display()
         print(f'Amount of lives: {lifes}')
         print(f'Guessed letters: {sorted_guessed_char}')
@@ -95,7 +79,5 @@ It's all about animal names ...
     
     else: 
         print(f'Congrates, you won the game! The searched word was {searched_word}.')
-
-
 
 game()
